@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #941988;
+
+        }
+
+        header {
+            background-color: #0e5ec6;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative; /* Add this */
+        }
+
+        .header-content h1 {
+            font-size: 3.5rem;
+        }
+
+        /* Add styles for the round profile picture */
+        .profile-picture {
+            width: 200px; /* Adjust the size as needed */
+            height: 200px;
+            border-radius: 75%; /* Create a circular shape */
+            object-fit: cover; /* To ensure the image fills the circular area */
+            position: absolute; /* Add this */
+            top: 15px; /* Adjust top position as needed */
+            left: 75px; /* Adjust left position as needed */
+        }
+
+        nav {
+            background-color: #da84e9;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #080101;
+        }
+
+        .section-content {
+            background-color: #da84e9;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        .download-button {
+            background-color: #941988;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            align-self: center;
+        }
+
+        .download-button:hover {
+            background-color: #555555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #0e5ec6;
+            color: #fff;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Add your profile picture here -->
+            <img src="hr.jpg" alt="Your Profile Picture" class="profile-picture">
+            <h1><i>HARINI R</i></h1>
+            <p><i>Am Web developer & Programmer</i></p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about"><i>ABOUT</i></a></li>
+            <li><a href="#education"><i>EDUCATION</i></a></li>
+            <li><a href="#skills"><i>SKILLS</i></a></li>
+            <li><a href="#projects"><i>PROJECTS</i></a></li>
+            <li><a href="#resume"><i>RESUME</i></a></li>
+           
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2><i>ABOUT ME</i></h2>
+            <p>I'm  a  passionate  and  dedicated  <b>web  development  &  programming  </b>  student  pursuing  <i>Bachelor  of  Computer  Applications  (BCA)</i>  2nd-year , 
+                 eager  to  make  a  mark  in  the  tech  world .  Technology  has  always  fascinated  me ,  
+                 and  my  journey  in  programming  started  with  a  deep  curiosity  about  how  things  work  behind  the  screen .  
+                 Over  time ,  this  curiosity  transformed  into  a  strong  passion  for  <i>coding</i> ,  <i>debugging</i> ,  and  <i>problem-solving</i> . 
+                 I  have  basic  foundation  in  <i>programming</i> ,  <i>web  development</i> ,  and  <i>database  management</i> ,  allowing  me  to  work  on  diverse  projects  with  confidence .</p>
+
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2><i>EDUCATION</i></h2>
+            <p>Queen Mary's College  - BCA (pursuing)</p>
+            
+            
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2><i>SKILLS</i></h2>
+            <ul>
+                <li>Python</li>
+                <li>C</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>Html</li>
+                <li>JavaScript</li>
+                <li>CSS</li>
+                <li>Excel</li>
+                <li>Word</li>
+                <li>Ppt</li>
+                <li>Multimedia</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2><i>PROJECTS</i></h2>
+            <ul>
+                <li><a href="PG.py">Password Generator</a></li>
+                <li><a href="Calculator.jar">Calculator</a></li>
+                <li><a href="#">Student Management System</a></li>
+                <li><a href="harini.html">Digital Portfolio</a></li> 
+                <!-- Add more project links here -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="resume">
+    
+        <div class="section-content">
+            <center>
+            <h2><i>RESUME</i></h2>
+            <a href="HR.pdf" target="_blank" class="download-button">Download CV</a>
+        </center>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2025 HARINI R</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
